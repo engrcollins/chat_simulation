@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+  </div>
+  <p>Click the button to display the hour of the time right now.</p>
+
+               <!--<div class="cole" id="cole_1">
+                    <img src="./images/cole11.jpg" alt="Avatar1" class="right">
+                    <span class="time-left">11:00</span>
+                    <p id='demo'></p>
+                </div>
+                <div class="cole ike" id="ike_1">
+                    <img src="./images/ike11.jpg" alt="Avatar2" onclick="sendMessage(msg_2, blockID_2)">
+                    <span class="time-right">11:00</span>
+                    <p id='demo'></p>
+                
+                </div>-->
+
+  <button onclick="eventTime()">Try it</button>
+  
+  <p id="demo"></p>
+  
+  <script>
+  function eventTime() {
+    var d = new Date();
+    var mins = d.getMinutes();
+    var hrs = d.getHours();
+
+    var hours ="";
+		var minutes="";
+    var meridian ="";
+    
+		if (hrs > 12) {
+			hours = hrs - 12;
+			meridian = "pm";	
+		} else {
+			hours = hrs;
+			if(hours == 12){
+			  meridian = "pm";
+			}else{
+			  meridian = "am";
+			}
+		}
+
+		if (hours < 10) {
+			hours = '0' + hours;
+		}		
+		if (mins < 10) {
+			minutes= '0' + mins;
+		} else {
+			minutes = mins;
+		}
+    var t = `${hours}:${minutes}${meridian}`
+    console.log(t)
+  }
+  </script>
+
+</body>
+
+</html>

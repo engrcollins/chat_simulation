@@ -1,0 +1,243 @@
+@media only screen and (min-width: 604px) {
+	/* For tablets, small laptops: */
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+}
+  
+ @media only screen and (min-width: 967px) {
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+
+/* The device with borders */
+.smartphone {
+    position: relative;
+    background: url(./images/whatsappbg.png) fixed;
+    width: 360px;
+    height: 660px;
+    margin: 1px auto auto auto;
+    border: 16px black solid;
+    padding-bottom: 35px;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    float: center;
+    overflow: auto;
+    scroll-behavior: smooth;    
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+
+
+  .mid-button:hover
+  
+  /* The screen (or content) of the device */
+  .smartphone #content {
+    width: 328px;
+    height: 420px;
+    background: white;
+  }
+
+  .title {
+    overflow: hidden;
+    height: 68px;
+    width: 328px;
+    padding: 3px;
+    background-color: rgb(32, 133, 94);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 40px; /* Position the navbar at the top of the page */
+    z-index: 1000;
+  }
+
+  .msgArea{
+    max-height: 370;
+    font-size: 13px;
+    /*overflow: auto;
+    /*-webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;*/
+  }
+
+  .msgArea-scrollbar {
+    display: none;
+}
+
+  .foot{
+    background: white;
+    display: flex;
+    align-items: flex-end;
+    height: auto;
+    width: 302px;
+    padding: 6px 2px;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 56px;
+    margin: 2px;
+    border-radius: 28px;
+    z-index: 1000;
+    border: 2px solid black;
+    font-weight: bold;
+  }
+
+.foot div{
+    display: inline;
+  }
+
+  .pre_type{
+    height: 26px;
+    margin: 2px 3px;
+  }
+
+  .para{
+    background: white;
+    width: 217px;
+    min-height: 15px;
+    padding: 1px;
+    display: flex column-reverse;
+    padding-right: 3px;
+    text-align: justify;
+    font-size: 14px;
+  }
+  
+  .icons{
+    width: 100px;
+     margin: 4px 1px;
+  }
+   
+
+  #send{
+    display: inline;
+    margin: 3px;
+  }
+  .cole {
+    position: relative;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 2px 0;
+    font-weight: bold;
+  }
+  
+  .ike {
+    border-color: #ccc;
+    background-color: rgb(243, 243, 243);
+  }
+  
+  .cole::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .cole img, #dp{
+    float: left;
+    max-width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .cole img.right{
+    float: right;
+    margin-left: 10px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    height: 15px;
+    margin: 0px 8px 0px 0px;
+    padding: 0px;
+    float: right;
+    color: #aaa;
+    font-size: 11px;
+    font-style: italic; 
+  }
+  
+  .time-left {
+    height: 15px;
+    margin: 0px 8px 0px 0px;
+    padding: 0px;
+    float: left;
+    color: #999;
+    font-size: 11px;
+    font-style: italic;    
+  }
+
+  .buttons{
+    width: 50px;
+    height: 50px;
+    margin: 100px auto;
+    border: 1px black solid;
+    border-radius: 15px;
+    bottom: 4.9%;
+    top: 40%;
+    background-color: red;
+    margin: 1px;
+  }
+
+  .first_row{
+	padding: 4px 15px;
+}
+
+.rightSide{
+	padding: 6px 4px;
+	font-size: 15px;
+}
+
+.leftSide{
+	padding: 2px 25px 5px 2px;
+	font-size: 17px;
+	text-align: justify;
+	border: none;
+}
+
+.nav-pills li{
+	background: white;
+	padding: 0px;
+	margin: -5px 2px;
+}
+
+.main{
+	top: 2px;
+	margin-left: 2px;
+	padding: 3px;
+	max-width: 99%;
+	text-align: left;
+	font-family: 'Times New Roman', Times, serif;
+	font-size:14px ;
+	font-weight: 525;
+}
+
+.leftSide li:hover {
+	cursor: pointer;
+}

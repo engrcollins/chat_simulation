@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>McCOLLINS</title>
+</head>
+
+<body>
+    <div class="smartphone col-6 col-s-6" id="scroller">       
+        <script type="text/javascript" src="script.js"></script>
+        <div id="content">
+            <div align="center" class="title" style="color:white;">
+                <img src="./images/ike11.jpg" alt="Avatar2" id="dp" style="max-width: 60px; border: 2px solid white;">
+                <h4 style="margin: 15px 15px; width: 310px;">Digital Controlla &ensp;
+                <span class="glyphicon glyphicon-option-vertical" style="float: right; margin-left: 2px; margin-right: 0px;"></span>
+                <span class="glyphicon glyphicon-earphone" style="float: right; margin-left: 6px;"></span>
+                <span class="glyphicon glyphicon-facetime-video" style="float: right; margin-left: 3px;"></span>
+                </h4>
+            </div>
+            <br><br><br>
+
+            <div class = 'msgArea' id="msgArea">
+                <div style="position:absolute; float: left;">
+                    <audio id="myAudio" controls>
+                        <source src="./images/controlla_skit.mp3" type="audio/mp3">
+                    </audio>
+                <div>
+
+            
+            </div>       
+            <div class='foot'>
+                <div class="pre-type">
+                    <span class='pre_type' style= "float: left; font-size: 20px;">&#128522</span>
+                </div>
+                <div>
+                    <p class="para" id="typist" onclick="sendMessage(msg_1, blockID_1)" ></p>                   
+                </div>
+                <div class="icons glyphicon glyphicon-paperclip" style="margin-left:2px; float: right; font-size: 18px;">
+                </div>
+                <div  class="icons glyphicon glyphicon-camera" style="margin-left:4px; float: right; font-size: 18px;">
+                </div>
+               
+                <div id="send">
+                    <span class="glyphicon glyphicon-send" style="float: right; display: inline-flex; font-size: 18px;"></span>
+                </div>
+                <button class=" btn btn-primary" id="fire" onclick="sendMessage(msgList); playAudio();"></button>
+                <button class=" btn btn-primary" id="fire_2" onclick="playAudio()"></button>
+                <script type='text/javascript'>
+                    document.getElementById("fire").click();
+                    document.getElementById("fire_2").click();
+                    window.setInterval(function() {
+                        var elem = document.getElementById('scroller');
+                        elem.scrollTop = elem.scrollHeight;
+                    }, 5000);
+                </script>
+            </div>
+        </div><!--endContent-->
+    </div><!--endSmartphone-->
+</body>
+
+</html>
